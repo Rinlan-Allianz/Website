@@ -336,9 +336,47 @@
   @media(max-width:900px){
     nav.top ul{display:none}
     .nav-cta .btn:first-child{display:none}
+    .nav-cta .btn{padding:10px 14px;font-size:13px}
+    .brand b{font-size:17px}
+    .brand small{font-size:13px}
+
     .profile,.award-grid,.pillars,.promo-grid,.mini-promos,.steps,.t-grid,.c-grid,.f-grid{grid-template-columns:1fr !important}
-    .hero .quick-stats{gap:14px}
     .step{transform:none !important}
+
+    /* Hero */
+    .hero{padding:40px 20px 60px}
+    .hero h1{font-size:clamp(30px,7vw,48px)}
+    .hero .hw{font-size:clamp(20px,4.5vw,30px)}
+    .hero p.sub{font-size:15px;margin:18px auto 24px}
+    .float{display:none}
+
+    /* Quick stats */
+    .hero .quick-stats{gap:10px;margin-top:36px}
+    .qs{min-width:0;padding:12px 14px;flex:1 1 120px}
+    .qs b{font-size:24px}
+    .qs small{font-size:11px}
+
+    /* Section headings */
+    section{padding:60px 20px}
+    .section-head h2{font-size:clamp(24px,6vw,38px)}
+    .section-head .hw{font-size:24px}
+
+    /* Profile */
+    .bio h3{font-size:clamp(26px,6vw,40px)}
+    .bio .lede{font-size:16px}
+    .photo-card::before{font-size:17px}
+
+    /* Promo */
+    .promo-hero h3{font-size:clamp(22px,5vw,32px)}
+
+    /* Contact */
+    .c-left h3{font-size:clamp(22px,5vw,32px)}
+    .c-right{grid-template-columns:1fr}
+    .field.full{grid-column:span 1}
+    .submit-row{grid-column:span 1}
+
+    /* Footer */
+    .f-big{font-size:clamp(26px,6vw,40px)}
   }
 </style>
 </head>
@@ -421,18 +459,9 @@
     <a class="btn" href="tel:+66655165497">☎ 065-516-5497</a>
   </div>
 
-  <!-- Bear mascot -->
+  <!-- Mascot -->
   <div class="bear-stage">
-    <div class="bear">
-      <div class="ear l"></div>
-      <div class="ear r"></div>
-      <div class="body"></div>
-      <div class="eye l"></div>
-      <div class="eye r"></div>
-      <div class="cheek l"></div>
-      <div class="cheek r"></div>
-      <div class="mouth"></div>
-    </div>
+    <img src="mascot.svg" alt="mascot" style="width:100%;height:100%;object-fit:contain;display:block">
     <div class="blush">your buttery best friend</div>
   </div>
 
